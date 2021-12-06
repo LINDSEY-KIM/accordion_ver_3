@@ -1,0 +1,56 @@
+*{margin: 0; padding: 0;}
+
+.wrap{
+    height: 100vh;
+    display: flex;
+}
+
+.con{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    transition: .5s;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+}
+
+.con:nth-child(1) .item{
+    background-color: thistle;
+}
+
+.con:nth-child(2) .item{
+    background-color: lightgrey;
+}
+
+.con:nth-child(3) .item{
+    background-color: lightsalmon;
+}
+
+.con:nth-child(4) .item{
+    background-color: lightseagreen;
+}
+
+.in_box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.con.active{
+    width: 60%
+}
+
+.active .in_box{
+    display: flex;
+}
